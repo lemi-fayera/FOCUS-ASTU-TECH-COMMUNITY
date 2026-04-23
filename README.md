@@ -4,7 +4,7 @@ A clean, responsive, and minimalist To-Do List interface built with **HTML5** an
 
 ## 🚀 Live Preview
 
-![Project Screenshot](images/preview.png)
+![Project Screenshot](./To-Do-App/images/preview.png)
 
 ---
 
@@ -34,6 +34,6 @@ Building this project helped me bridge the gap between "making things work" and 
 ```text
 ├── index.html   # The structural skeleton (HTML5)
 ├── styles.css   # The styling and layout (CSS3)
-├── styles.css   # The styling and layout (CSS3)
-  └── screenshot.png  # Preview of the final design
+├── images
+  └── preview.png  # Preview of the final design
 ```
