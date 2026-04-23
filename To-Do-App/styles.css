@@ -1,3 +1,4 @@
+/* Resetting defaults for a clean slate */
 * {
   margin: 0;
   padding: 0;
@@ -5,98 +6,165 @@
 }
 
 body {
-    font-family: sans-serif;
-    background-color:#ECF3FF ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ECF3FF; /* The light blue background from the design */
+  display: flex;
+  justify-content: center; /* Centers the app horizontally */
+  align-items: flex-start; /* Aligns to top */
+  min-height: 100vh;
+  padding-top: 50px;
 }
+
 .app-wrapper {
   width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 800px; /* Increased width to match the desktop look */
+  text-align: center; /* Centers the header text */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.logo-icon,h1 {
-    display: inline;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 30px;
 
+/* Header Section */
+header h1 {
+  font-size: 40px;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Space between icon and text */
 }
 
 .logo-icon {
-    color: blue;
-}
-header {
-    margin: 20px;
-    padding: 30px;
+  color: #2563eb; /* A more vibrant blue */
 }
 
-.stats-row {
-    display: flex;
-    margin: 20px;
-    
+header p {
+  color: #666;
+  margin-top: 8px;
+  font-size: 18px;
 }
 
-.card {
-
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 20px;
-    border: 1px solid rgb(135, 126, 126);
-    border-radius: 5%;
-    margin: 5px;
-    width: 100%;
-}
-.todo-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin: 20px;
-
-}
-
-.task-item {
-    display: flex;
-    align-items: center;
-    padding: 8px 0;
-    border-bottom: 1px solid #eee;
-}
-
-.task-label { flex: 1; margin-left: 10px; cursor: pointer; }
-
-.hidden-check:checked ~ .task-label {
-    text-decoration: line-through;
-    color: #888;
-}
-
-
-.hover-actions { display: none; gap: 10px; color: #666; }
-.task-item:hover .hover-actions { display: flex; }
-
-
-.edit-icon:hover { color: #007bff; }
-.delete-icon:hover { color: #ff4d4d; }
-
+/* Input Bar Section */
 .input-container {
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 10px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 600px;
 }
 
-input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    flex: 1;
+input[type="text"] {
+  padding: 15px 20px;
+  border: 1px solid #dbeafe;
+  border-radius: 8px;
+  flex: 1;
+  font-size: 16px;
+  background-color: #f8faff; /* Slightly off-white input */
 }
 
 .add-btn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 15px;
-    cursor: pointer;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0 25px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .add-btn:hover {
-    background-color: #0056b3;
+  background-color: #1d4ed8;
 }
+
+/* Stats Row - The three summary cards */
+.stats-row {
+  display: flex;
+  gap: 20px;
+  margin: 0 auto 20px auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+}
+
+.num {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.blue { color: #2563eb; }
+.green { color: #10b981; }
+.dark { color: #1f2937; }
+
+.tag {
+  color: #6b7280;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* To-Do List Section */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.task-item {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  transition: transform 0.2s;
+}
+
+.task-item:hover {
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Checkbox Styling */
+.hidden-check {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.task-label {
+  flex: 1;
+  margin-left: 15px;
+  text-align: left;
+  font-size: 16px;
+  color: #374151;
+}
+
+/* Completed State logic */
+.hidden-check:checked ~ .task-label {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+/* Actions that appear only on hover */
+.hover-actions {
+  display: none;
+  gap: 12px;
+  color: #9ca3af;
+}
+
+.task-item:hover .hover-actions {
+  display: flex;
+}
+
+.edit-icon:hover { color: #2563eb; cursor: pointer; }
+.delete-icon:hover { color: #ef4444; cursor: pointer; }

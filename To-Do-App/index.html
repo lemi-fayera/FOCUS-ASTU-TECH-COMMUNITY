@@ -1,65 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS-Only Todo App</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
     <div class="app-wrapper">
-        <header>
-            <div class="logo-icon"><i class="fa-regular fa-circle-check"></i></div>
-            <h1>To-Do List</h1>
-            <p>Stay organized and productive</p>
-        </header>
+      <header>
+        <h1><i class="fa-regular fa-circle-check logo-icon"></i> To-Do List</h1>
+        <p>Stay organized and productive</p>
+      </header>
 
-        <div class="input-container">
-            <input type="text" placeholder="Add a new task...">
-            <button class="add-btn"><i class="fa-solid fa-plus"></i> Add</button>
+      <div class="input-container">
+        <input type="text" placeholder="Add a new task..." />
+        <button class="add-btn"><i class="fa-solid fa-plus"></i> Add</button>
+      </div>
+
+      <div class="stats-row">
+        <div class="card">
+          <span class="num blue">2</span>
+          <span class="tag">Active</span>
+        </div>
+        <div class="card">
+          <span class="num green">1</span>
+          <span class="tag">Completed</span>
+        </div>
+        <div class="card">
+          <span class="num dark">3</span>
+          <span class="tag">Total</span>
+        </div>
+      </div>
+
+      <div class="todo-list">
+        <div class="task-item">
+          <input type="checkbox" id="task1" class="hidden-check" />
+          <label for="task1" class="check-custom"></label>
+          <label for="task1" class="task-label"
+            >Welcome to your to-do list!</label
+          >
+          <div class="hover-actions">
+            <i class="fa-solid fa-pencil edit-icon"></i>
+            <i class="fa-solid fa-trash-can delete-icon"></i>
+          </div>
         </div>
 
-        <div class="stats-row">
-            <div class="card">
-                <span class="num blue">2</span>
-                <span class="tag">Active</span>
-            </div>
-            <div class="card">
-                <span class="num green">1</span>
-                <span class="tag">Completed</span>
-            </div>
-            <div class="card">
-                <span class="num dark">3</span>
-                <span class="tag">Total</span>
-            </div>
+        <div class="task-item">
+          <input type="checkbox" id="task1" class="hidden-check" />
+          <label for="task1" class="check-custom"></label>
+          <label for="task1" class="task-label"
+            >Click the checkbox to mark as complete</label
+          >
+          <div class="hover-actions">
+            <i class="fa-solid fa-pencil edit-icon"></i>
+            <i class="fa-solid fa-trash-can delete-icon"></i>
+          </div>
         </div>
 
-        <div class="todo-list">
-            
-            <div class="task-item">
-                <input type="checkbox" id="task1" class="hidden-check">
-                <label for="task1" class="check-custom"></label>
-                <label for="task1" class="task-label">Welcome to your to-do list!</label>
-                <div class="hover-actions">
-                    <i class="fa-solid fa-pencil edit-icon"></i>
-                    <i class="fa-solid fa-trash-can delete-icon"></i>
-                </div>
-            </div>
-
-            <div class="task-item">
-                <input type="checkbox" id="task2" class="hidden-check" checked>
-                <label for="task2" class="check-custom"></label>
-                <label for="task2" class="task-label">Hover to delete items</label>
-                <div class="hover-actions">
-                    <i class="fa-solid fa-pencil edit-icon"></i>
-                    <i class="fa-solid fa-trash-can delete-icon"></i>
-                </div>
-            </div>
-
+        <div class="task-item">
+          <input type="checkbox" id="task2" class="hidden-check" checked />
+          <label for="task2" class="check-custom"></label>
+          <label for="task2" class="task-label">Hover to delete items</label>
+          <div class="hover-actions">
+            <i class="fa-solid fa-pencil edit-icon"></i>
+            <i class="fa-solid fa-trash-can delete-icon"></i>
+          </div>
         </div>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
