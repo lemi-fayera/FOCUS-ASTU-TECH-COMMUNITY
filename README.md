@@ -1,39 +1,35 @@
-# Modern To-Do List UI 📝
+# Todo List App
 
-A clean, responsive, and minimalist To-Do List interface built with **HTML5** and **CSS3**. This project was created as a learning exercise to master CSS layout techniques, Flexbox, and visual hierarchy.
+A simple and clean to-do list application with HTML, CSS, and JavaScript functionality.
 
-## 🚀 Live Preview
+## Features
 
-![Project Screenshot](./To-Do-App/images/preview.png)
+- ✅ Add new tasks
+- ✅ Mark tasks as complete
+- ✅ Edit and delete tasks
+- ✅ Live statistics (Active, Completed, Total)
+- ✅ Persistent storage (localStorage)
+- ✅ Hover effects with edit/delete actions
 
----
+## Tech Stack
 
-## 🛠️ Concepts Learned
+- HTML5
+- CSS3 (with custom checkboxes and animations)
+- JavaScript (ES6+)
+- Font Awesome 7.0.1 (icons)
 
-Building this project helped me bridge the gap between "making things work" and "making things look professional." Key concepts include:
+## Usage
 
-### 1. The Box Model & Alignment
+1. Open `index.html` in your browser
+2. Type a task in the input field
+3. Click "Add" or press Enter to add the task
+4. Click checkbox to mark as complete
+5. Hover over a task to see edit/delete options
 
-- **Centered Layouts:** Learned how to use `margin: 0 auto` and `max-width` to keep the app centered and readable on large screens.
-- **Fixed Widths:** Solved alignment issues by ensuring all components (Stats, Input, and List) share the same `max-width` constraint.
+## Project Structure
+├── index.html
+├── css/
+│ └── style.css
+├── js/
+│ └── script.js
 
-### 2. Flexbox Mastery
-
-- Used `display: flex` with `flex: 1` to create three perfectly equal-sized cards in the statistics row.
-- Used the `gap` property instead of messy individual margins for consistent spacing.
-
-### 3. CSS "Logic" (Interactive States)
-
-- **Checkbox Hack:** Used the `:checked` pseudo-class and the sibling selector (`+` / `~`) to strike through text and change colors when a task is completed—all without JavaScript!
-- **Hover Transitions:** Implemented `transform: translateY()` and `opacity` changes to give the UI a "snappy" and interactive feel.
-
----
-
-## 📂 Project Structure
-
-```text
-├── index.html   # The structural skeleton (HTML5)
-├── styles.css   # The styling and layout (CSS3)
-├── images
-  └── preview.png  # Preview of the final design
-```
