@@ -1,35 +1,83 @@
-# Todo List App
+# 📝 Todo List App
 
-A simple and clean to-do list application with HTML, CSS, and JavaScript functionality.
+A modern and responsive Todo List application built with **HTML, CSS, and JavaScript**. This project helps users manage daily tasks efficiently with features like task creation, editing, completion tracking, and persistent storage using the browser's localStorage.
 
-## Features
+## 🚀 Features
 
-- ✅ Add new tasks
-- ✅ Mark tasks as complete
-- ✅ Edit and delete tasks
-- ✅ Live statistics (Active, Completed, Total)
-- ✅ Persistent storage (localStorage)
-- ✅ Hover effects with edit/delete actions
+* ➕ Add new tasks
+* ✏️ Edit existing tasks
+* 🗑️ Delete tasks
+* ✅ Mark tasks as completed
+* 📊 Real-time task statistics
 
-## Tech Stack
+  * Active Tasks
+  * Completed Tasks
+  * Total Tasks
+* 💾 Automatic data saving with localStorage
+* 🎨 Clean and responsive user interface
+* 🖱️ Hover actions for task management
+* ⌨️ Add tasks by pressing Enter
 
-- HTML5
-- CSS3 (with custom checkboxes and animations)
-- JavaScript (ES6+)
-- Font Awesome 7.0.1 (icons)
+## 🛠️ Tech Stack
 
-## Usage
+* **HTML5** – Structure and content
+* **CSS3** – Styling, layout, and animations
+* **JavaScript (ES6+)** – Application logic and interactivity
+* **Font Awesome 7** – Icons
 
-1. Open `index.html` in your browser
-2. Type a task in the input field
-3. Click "Add" or press Enter to add the task
-4. Click checkbox to mark as complete
-5. Hover over a task to see edit/delete options
+## 📂 Project Structure
 
-## Project Structure
+```text
+todo-list-app/
 ├── index.html
 ├── css/
-│ └── style.css
+│   └── style.css
 ├── js/
-│ └── script.js
+│   └── script.js
+└── README.md
+```
 
+## 📸 Preview
+
+Add a screenshot or GIF of your application here.
+
+```md
+![Todo App Screenshot](./To-Do-App/images/preview.png)
+```
+
+## 🚀 Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/lemi-fayera/todo-list-app.git
+```
+
+### Run the Project
+
+1. Open the project folder.
+2. Launch `index.html` in your browser.
+3. Start adding and managing tasks.
+
+## 💡 How It Works
+
+* Tasks are stored in the browser's **localStorage**.
+* Completed tasks are visually distinguished from active tasks.
+* Statistics update automatically whenever tasks are added, edited, completed, or removed.
+* Data remains available even after refreshing or reopening the browser.
+
+## 🎯 Learning Objectives
+
+This project demonstrates:
+
+* DOM Manipulation
+* Event Handling
+* JavaScript Arrays & Objects
+* localStorage API
+* Responsive CSS Design
+* CRUD Operations (Create, Read, Update, Delete)
+
+
+## 👨‍💻 Author
+
+Developed by **Lemi Fayera**.
