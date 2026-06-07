@@ -42,8 +42,7 @@ todo-list-app/
 Add a screenshot or GIF of your application here.
 
 ```md
-![Todo App Screenshot](./To-Do-App/images/preview.png)
-```
+![Todo App Screenshot](images/preview.png)```
 
 ## 🚀 Getting Started
 
