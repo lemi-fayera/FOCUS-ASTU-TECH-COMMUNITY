@@ -42,19 +42,7 @@ todo-list-app/
 Add a screenshot or GIF of your application here.
 
 ![Todo App Screenshot](./To-Do-App/images/preview.png)
-## 🚀 Getting Started
 
-### Clone the Repository
-
-
-git clone https://github.com/lemi-fayera/todo-list-app.git
-
-
-### Run the Project
-
-1. Open the project folder.
-2. Launch `index.html` in your browser.
-3. Start adding and managing tasks.
 
 ## 💡 How It Works
 
