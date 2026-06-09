@@ -46,10 +46,9 @@ Add a screenshot or GIF of your application here.
 
 ### Clone the Repository
 
-```bash
+
 git clone https://github.com/lemi-fayera/todo-list-app.git
-```
-````
+
 
 ### Run the Project
 
@@ -75,6 +74,7 @@ This project demonstrates:
 - Responsive CSS Design
 - CRUD Operations (Create, Read, Update, Delete)
 
-## 👨‍💻 Author
 
-Developed by **Lemi Fayera**.
+Developed by: **Lemi Fayera**.
+ 
+ ```
